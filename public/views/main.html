@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" infinite-scroll="paginate()" infinite-scroll-disabled="$scope.movieType === 'opening'">
 	<div ng-repeat='movie in movies.movies' class="panel panel-default">
 		<div class="panel-body">
 			<div class="media">
