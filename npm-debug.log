@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'uninstall',
+1 verbose cli   '--save',
+1 verbose cli   'express-handlebars' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose node_modules/express-handlebars unbuild
+5 info preuninstall express-handlebars@1.1.0
+6 info uninstall express-handlebars@1.1.0
+7 verbose true,/Users/Andrew/Fullstack/RTreader/node_modules,/Users/Andrew/Fullstack/RTreader/node_modules unbuild express-handlebars@1.1.0
+8 info postuninstall express-handlebars@1.1.0
+9 error Error: EACCES, unlink '/Users/Andrew/Fullstack/RTreader/node_modules/express-handlebars/node_modules/.bin/handlebars'
+9 error  { [Error: EACCES, unlink '/Users/Andrew/Fullstack/RTreader/node_modules/express-handlebars/node_modules/.bin/handlebars']
+9 error   errno: 3,
+9 error   code: 'EACCES',
+9 error   path: '/Users/Andrew/Fullstack/RTreader/node_modules/express-handlebars/node_modules/.bin/handlebars' }
+10 error Please try running this command again as root/Administrator.
+11 error System Darwin 14.1.0
+12 error command "node" "/usr/local/bin/npm" "uninstall" "--save" "express-handlebars"
+13 error cwd /Users/Andrew/Fullstack/RTreader
+14 error node -v v0.10.33
+15 error npm -v 1.4.28
+16 error path /Users/Andrew/Fullstack/RTreader/node_modules/express-handlebars/node_modules/.bin/handlebars
+17 error code EACCES
+18 error errno 3
+19 error stack Error: EACCES, unlink '/Users/Andrew/Fullstack/RTreader/node_modules/express-handlebars/node_modules/.bin/handlebars'
+20 verbose exit [ 3, true ]

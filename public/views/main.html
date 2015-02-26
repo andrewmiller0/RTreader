@@ -1,0 +1,23 @@
+<div class="container">
+	<div ng-repeat='movie in movies.movies' class="panel panel-default">
+		<div class="panel-body">
+			<div class="media">
+				<div class="pull-left">
+					<img class="media-object img-rounded" ng-src="{{movie.posters.original}}">
+				</div>
+				<div class="media-body">
+					<h2 class="media-heading">
+						{{movie.title}}
+						<span class="pull-right" ng-show='movie.ratings.critics_rating != undefined'>{{movie.ratings.critics_rating}}, {{movie.ratings.critics_score}}%</span>
+
+					</h2>
+					<h4>
+						Starring: <span ng-repeat="actor in movie.abridged_cast">{{actor.name}}, </span>
+					</h4>
+
+					<p>{{movie.synopsis}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
