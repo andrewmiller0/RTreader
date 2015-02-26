@@ -13,7 +13,7 @@ angular.module('RTreader')
 	})
 	.controller('MainCtrl', function($scope, $http, Movies, $routeParams) {
 		console.log($routeParams);
-		var type =  'opening' || $routeParams.release;
+		var type = $routeParams.release || 'in_theaters';
 
 		Movies.getMovies({type: type}).$promise.then(function(movies){
 			console.log(movies);
