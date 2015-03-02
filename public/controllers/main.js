@@ -22,7 +22,7 @@ angular.module('RTreader')
 			});
 		}
 		$scope.paginate = function(){
-			console.log('hi');
+			console.log($scope.page);
 			$scope.page++;
 			Movies.getMovies({type:$scope.movieType, page: $scope.page}).$promise.then(function(movies){
 				$scope.movies.movies = $scope.movies.movies.concat(movies.movies);
